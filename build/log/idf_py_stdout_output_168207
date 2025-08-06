@@ -1,0 +1,19 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/max/code/esp/test-blink/build/bootloader/esp-idf/esptool_py && /home/max/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/max/code/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/max/code/esp/test-blink/build/bootloader/bootloader.bin
+Bootloader binary size 0x5170 bytes. 0x2e90 bytes (36%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+[5/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/led_blink.cpp.obj
+[6/11] Linking C static library esp-idf/main/libmain.a
+[7/11] Generating ld/sections.ld
+[8/11] Building C object CMakeFiles/test-blink.elf.dir/project_elf_src_esp32c3.c.obj
+[9/11] Linking CXX executable test-blink.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated /home/max/code/esp/test-blink/build/test-blink.bin
+[11/11] cd /home/max/code/esp/test-blink/build/esp-idf/esptool_py && /home/max/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/max/code/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/max/code/esp/test-blink/build/partition_table/partition-table.bin /home/max/code/esp/test-blink/build/test-blink.bin
+test-blink.bin binary size 0x6b380 bytes. Smallest app partition is 0x100000 bytes. 0x94c80 bytes (58%) free.
